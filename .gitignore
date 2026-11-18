@@ -1,0 +1,10 @@
+# Local Netlify folder
+.netlify
+
+# Cloudflare / Wrangler
+.wrangler
+.dev.vars
+
+# OS
+.DS_Store
+Thumbs.db

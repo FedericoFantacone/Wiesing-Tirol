@@ -40,10 +40,26 @@ node _build/serve.mjs 4173     # http://localhost:4173/
 
 Der Server liefert ausschließlich den Ordner `web/` aus.
 
-## Deployment
+## Deployment (Cloudflare Pages)
 
-Den Ordner `web/` auf einen beliebigen Static-Host hochladen (funktioniert auch per
-`file://`). Kanonische URLs zeigen auf `https://www.wiesing.gv.at/`.
+Die Website ist eine statische Seite im Ordner `web/` (kein Build-Schritt nötig).
+Gehostet auf **Cloudflare Pages**.
+
+1. Repository in Cloudflare Pages verbinden (Workers & Pages → Create → Pages → Connect to Git).
+2. Build command: *(leer lassen)*
+3. Build output directory: `web`
+4. Domain `www.wiesing.gv.at` in Cloudflare Pages → Custom domains eintragen und DNS anpassen.
+5. Security-/Cache-Header liegen in `web/_headers`.
+
+Lokales Deploy mit Wrangler:
+
+```sh
+npx wrangler pages deploy web
+```
+
+Den Ordner `web/` kann weiterhin auch auf einen beliebigen Static-Host hochgeladen
+werden (funktioniert auch per `file://`). Kanonische URLs zeigen auf
+`https://www.wiesing.gv.at/`.
 
 ## Architektur & Qualität
 
