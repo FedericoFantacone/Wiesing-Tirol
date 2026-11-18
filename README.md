@@ -48,8 +48,9 @@ Gehostet auf **Cloudflare Pages**.
 1. Repository in Cloudflare Pages verbinden (Workers & Pages → Create → Pages → Connect to Git).
 2. Build command: *(leer lassen)*
 3. Build output directory: `web`
-4. Domain `www.wiesing.gv.at` in Cloudflare Pages → Custom domains eintragen und DNS anpassen.
-5. Security-/Cache-Header liegen in `web/_headers`.
+4. Das Projekt ist sofort unter `https://<projektname>.pages.dev` erreichbar.
+5. (Optional, später) Eigene Domain `www.wiesing.gv.at` in Cloudflare Pages → Custom domains eintragen und DNS anpassen.
+6. Security-/Cache-Header liegen in `web/_headers`.
 
 Lokales Deploy mit Wrangler:
 
