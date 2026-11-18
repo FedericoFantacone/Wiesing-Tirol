@@ -1,0 +1,5 @@
+# robots.txt – Gemeinde Wiesing
+User-agent: *
+Allow: /
+
+Sitemap: https://www.wiesing.gv.at/sitemap.xml
